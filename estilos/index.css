@@ -1,0 +1,325 @@
+/*
+    padding: 0;
+    margin: 0;
+}
+
+h1, p{
+    background-color: rgb(245, 229, 3);
+}
+
+li{
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+h1{
+    padding: 50px 25px 75px 30px;
+    border: 10px solid black;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+/* Box model se va a comportar de acuerdo a cuatro 
+parámetros:
+Contenido;
+padding: relleno;
+border: borde;
+
+.imagenLibros{
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+}
+
+.imagenMuchosLibros{
+    position: absolute;
+    bottom: 40px;
+    left: 600px;
+}
+
+.imagenLibrosDos{
+    position: fixed;
+    bottom: 40px;
+    left: 1000px;
+}
+
+.imagenLibroArbol{
+    position: sticky;
+    bottom: 20px;
+    left: 1700px;
+
+}
+
+
+ Flexbox 
+
+.menuContainer{
+    color: blanchedalmond;
+    background-color: blue;
+    padding: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.menu{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccionImg{
+    display: flex;
+    
+}
+
+.imagenes{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.piePagina{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footerItem{
+    
+    border: 1px solid blue;
+    height: 200px;
+    flex: 1;
+}
+*/
+
+/* grids */
+.padre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "libroarbol libros"
+    "muchoslibros libros2"
+    
+}
+​
+.foto1{
+    grid-area: libroarbol;
+}
+​
+.foto2{
+    grid-area: libros;
+}
+​
+.foto3{
+    grid-area: muchoslibros;
+}
+​
+.foto4{
+    grid-area: librosdos;
+}
+
+/* grids chico */
+
+
+
+        @media only screen and (max-width: 480px){
+            nav{
+                background-color: yellow;
+            }
+       
+            .padre{
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 4fr;
+                grid-template-areas: 
+                "libroarbol"
+                "libros"
+                "muchoslibros"
+                "librosdos"
+                
+                ;
+            }
+        } 
+
+        @media only screen and (min-width: 426px){
+            nav{
+                background-color: rgb(17, 0, 255);
+            }
+       
+            .padre{
+                display: grid;
+                grid-template-columns: 2fr ;
+                grid-template-rows: 2fr;
+                grid-template-areas: 
+                "libroarbol libros"
+                "muchoslibros librosdos"
+                
+                
+                ;
+            }
+        } 
+            
+        @media only screen and (min-width: 700px){
+            nav{
+                background-color: rgb(255, 0, 34);
+            }
+       
+            .padre{
+                display: grid;
+                grid-template-columns: 2fr ;
+                grid-template-rows: 2fr;
+                grid-template-areas: 
+                "libroarbol libros"
+                "muchoslibros librosdos"
+                
+                ;
+            }
+        } 
+
+        /* transformaciones */
+
+        .box{
+            border-radius: 8px;
+            height: 40px;
+            width: 80px;
+            margin: 60px auto;
+        }
+
+        .box1{
+            background-color: mediumblue;
+
+        }
+
+        .box2{
+            background-color: mediumorchid;
+        }
+
+        .box:hover {
+            transform: scale(4);
+        }
+
+        /* transicion */
+
+        .box2 {
+            transition: all 1s;
+
+        }
+
+        .circle1, .circle2, .circle3,
+        .circle4, .circle5{
+            border-radius: 50px;
+            height: 30px;
+            width: 30px;
+            margin: 15px;
+        }
+
+        .circle1{
+            background-color: mediumorchid;
+            transition: all 2s ease;
+        }
+
+        .circle2{
+            background-color: midnightblue;
+            transition: all 2s ease-in;
+        }
+
+        .circle3{
+            background-color: olive;
+            transition: all 2s ease-in-out;
+        }
+
+        .circle4{
+            background-color: orangered;
+            transition: all 2s ease-out;
+        }
+
+        .circle5{
+            background-color: pink;
+            transition: all 2s step-end;
+        }
+
+        .container-circle:hover .circle1,
+        .container-circle:hover .circle2,
+        .container-circle:hover .circle3,
+        .container-circle:hover .circle4,
+        .container-circle:hover .circle5 {
+            transform: translateX(300px);
+
+        }
+        
+        .square1, .square2 {
+            border-radius: 5px;
+            height: 150px;
+            width: 150px;
+            margin: 100px;
+            position: absolute;
+        }
+
+        .square1{
+            background-color: royalblue;
+            
+
+        }
+
+        .square2{
+            background-color: sandybrown;
+            transition: all 2s;
+        }
+
+        .square2:hover{
+            transform: translate(20px, 20px);
+
+        }
+
+        .combinado{
+            background-color: springgreen;
+            height: 90px;
+            width: 90px;
+            margin: 50px auto;
+            transition:all 2s;
+        }
+
+        .combinado:hover{
+            transform: rotate(90deg) scale(3) translateX(80px);
+        }
+
+        /* animaciones */
+
+        .animaciones{
+            width: 150px;
+            height: 150px;
+            margin: 75px auto;
+            background-color: tomato;
+
+        }
+
+        .animaciones:hover{
+            animation: change-color 5s;
+        }
+
+        @keyframes change-color{
+            10%{
+                background-color: turquoise;
+            }
+
+            25%{
+                border-radius: 50%;
+            }
+
+            50%{
+                width: 300px;
+            }
+
+            75%{
+                background-color: yellow;
+            }
+
+            90%{
+                border-radius: 30%;
+            }
+        }
+
+        
