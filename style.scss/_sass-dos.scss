@@ -1,0 +1,12 @@
+$alto-box:30px;
+$ancho-box:800px;
+$blue: blue;
+$green: green;
+
+.box-uno{
+    background-color: $blue;
+    width: $ancho-box/2;
+    height: $alto-box;
+}
+
+

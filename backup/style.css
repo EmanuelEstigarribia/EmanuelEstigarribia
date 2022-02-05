@@ -1,98 +1,5 @@
-/*
-    padding: 0;
-    margin: 0;
-}
-
-h1, p{
-    background-color: rgb(245, 229, 3);
-}
-
-li{
-    padding: 20px 20px 20px 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: inline-block;
-}
-
-h1{
-    padding: 50px 25px 75px 30px;
-    border: 10px solid black;
-    border-radius: 15px;
-    margin: 30px;
-}
-
-/* Box model se va a comportar de acuerdo a cuatro 
-parámetros:
-Contenido;
-padding: relleno;
-border: borde;
-
-.imagenLibros{
-    position: relative;
-    bottom: 20px;
-    left: 40px;
-}
-
-.imagenMuchosLibros{
-    position: absolute;
-    bottom: 40px;
-    left: 600px;
-}
-
-.imagenLibrosDos{
-    position: fixed;
-    bottom: 40px;
-    left: 1000px;
-}
-
-.imagenLibroArbol{
-    position: sticky;
-    bottom: 20px;
-    left: 1700px;
-
-}
 
 
- Flexbox 
-
-.menuContainer{
-    color: blanchedalmond;
-    background-color: blue;
-    padding: 30px;
-    display: flex;
-    justify-content: start;
-}
-
-.menu{
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.seccionImg{
-    display: flex;
-    
-}
-
-.imagenes{
-    width: 900px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.piePagina{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.footerItem{
-    
-    border: 1px solid blue;
-    height: 200px;
-    flex: 1;
-}
-*/
 
 /* grids */
 .padre{
@@ -322,4 +229,5 @@ border: borde;
             }
         }
 
+        
         

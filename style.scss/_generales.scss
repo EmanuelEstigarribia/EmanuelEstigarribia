@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+
+        .box 
+        figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            h2{
+                color: white;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            p{
+                color: #efefef ;
+                margin-bottom: 10px;
+
+            }
+            
+                img{
+                    width: 250px;
+
+                    
+                }
+            
+            
+      
+
+    }
+}
+
+
+
