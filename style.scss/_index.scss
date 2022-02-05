@@ -1,0 +1,92 @@
+.centrado{
+    width: 100%;
+    background-color:black;
+    color: $color;
+    text-align: center;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "libroarbol libros"
+    "muchoslibros libros2"
+    
+}
+​
+.foto1{
+    grid-area: libroarbol;
+}
+​
+.foto2{
+    grid-area: libros;
+}
+​
+.foto3{
+    grid-area: muchoslibros;
+}
+​
+.foto4{
+    grid-area: librosdos;
+}
+
+/* grids chico */
+
+
+
+        @media only screen and (max-width: 480px){
+            nav{
+                background-color: yellow;
+            }
+       
+            .padre{
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 4fr;
+                grid-template-areas: 
+                "libroarbol"
+                "libros"
+                "muchoslibros"
+                "librosdos"
+                
+                ;
+            }
+        } 
+
+        @media only screen and (min-width: 426px){
+            nav{
+                background-color: rgb(17, 0, 255);
+            }
+       
+            .padre{
+                display: grid;
+                grid-template-columns: 2fr ;
+                grid-template-rows: 2fr;
+                grid-template-areas: 
+                "libroarbol libros"
+                "muchoslibros librosdos"
+                
+                
+                ;
+            }
+        } 
+            
+        @media only screen and (min-width: 700px){
+            nav{
+                background-color: rgb(255, 0, 34);
+            }
+       
+            .padre{
+                display: grid;
+                grid-template-columns: 2fr ;
+                grid-template-rows: 2fr;
+                grid-template-areas: 
+                "libroarbol libros"
+                "muchoslibros librosdos"
+                
+                ;
+            }
+        } 
+
+        
